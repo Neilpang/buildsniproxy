@@ -4,7 +4,11 @@ build sniproxy deb package
 
 # Get the deb package.
 ```sh
+
+docker pull neilpang/buildsniproxy
+
 docker run --rm -it  -v $(pwd)/out:/out  neilpang/buildsniproxy
+
 ```
 
 The deb package will be in the `pwd/out` folder.
